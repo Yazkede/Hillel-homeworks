@@ -1,5 +1,4 @@
-let r = 5;
-let h = 10;
-let v;
-v = Math.PI * r * r * h;
-console.log("Объём цилиндра V = " + v);
+let radius = 5;
+let height = 10;
+let volume = Math.PI * (radius * radius) * height;
+console.log("Объём цилиндра V = " + volume);
