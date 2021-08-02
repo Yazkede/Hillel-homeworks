@@ -10,7 +10,7 @@ function converter() {
 }
 console.log(converter());
 if ((distanceKm * converter()) > distanceFoot) {
-    alert("Расстояние в км больше, а расстояние в футах меньше");
+    alert("Расстояние в километрах больше, а расстояние в футах меньше");
 } else if ((distanceKm * converter()) < distanceFoot) {
     alert("Расстояние в футах больше, а расстояние в километрах меньше");
 } else alert("Расстояния равны");
