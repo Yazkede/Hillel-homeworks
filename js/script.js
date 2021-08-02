@@ -4,6 +4,7 @@ var distanceFoot = +prompt("Введите расстояние в футах");
 function converter() {
     var metersInKm = 1000;
     var footsInMeter = 0.305;
+    // Округляем до ближайшего целого.
     var result = Math.round(metersInKm / footsInMeter);
     return result;
 }
