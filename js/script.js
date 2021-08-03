@@ -3,9 +3,9 @@ var distanceFoot = +prompt("Введите расстояние в футах");
 // Функция высчитывает коэффициент перевода километров в футы.
 function converter() {
     var metersInKm = 1000;
-    var footsInMeter = 0.305;
+    var metersInFoot = 0.305;
     // Округляем до ближайшего целого.
-    var result = Math.round(metersInKm / footsInMeter);
+    var result = Math.round(metersInKm / metersInFoot);
     return result;
 }
 console.log(converter());
