@@ -1,5 +1,5 @@
-var distanceKm = +prompt("Введите расстояние в километрах");
-var distanceFoot = +prompt("Введите расстояние в футах");
+var distanceKm = +prompt("Введите расстояние в километрах", 0);
+var distanceFoot = +prompt("Введите расстояние в футах", 0);
 // Функция высчитывает коэффициент перевода километров в футы.
 function converter() {
     var metersInKm = 1000;
