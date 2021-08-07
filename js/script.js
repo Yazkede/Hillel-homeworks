@@ -6,10 +6,11 @@ function isLannisterSoldier(colorOfArmor, shield) {
     } else return console.log("false");
 }
 isLannisterSoldier("red", null);
-isLannisterSoldier("red", "lion");
 isLannisterSoldier("red", "dog");
+isLannisterSoldier("red", "lion");
 isLannisterSoldier("blue", null);
-isLannisterSoldier("green", "lion");
+isLannisterSoldier("blue", "lion");
+isLannisterSoldier("blue", "dog");
 
 //2способ===========================================================================================
 
