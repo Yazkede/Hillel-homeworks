@@ -1,4 +1,4 @@
-//1способ
+//1способ===========================================================================================
 
 function isLannisterSoldier(colorOfArmor, shield) {
     if ((colorOfArmor === "red" && shield === null) || (shield === "lion")) {
@@ -11,7 +11,7 @@ isLannisterSoldier("red", "dog");
 isLannisterSoldier("blue", null);
 isLannisterSoldier("green", "lion");
 
-//2способ
+//2способ===========================================================================================
 
 function isLannisterSoldier() {
     let colorOfArmor = prompt("Какой цвет доспехов?");
@@ -29,6 +29,3 @@ function isLannisterSoldier() {
     } else return alert("It's Not Lannister!");
 }
 isLannisterSoldier();
-
-
-
