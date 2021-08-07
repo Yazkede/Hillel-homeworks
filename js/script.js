@@ -23,9 +23,7 @@ function isLannisterSoldier() {
             break;
         case false: break;
     }
-    if ((colorOfArmor === "red" && shield === false) ||
-        (imageOnShield === "lion") ||
-        (colorOfArmor === "red" && imageOnShield === "lion")) {
+    if ((colorOfArmor === "red" && shield === false) || (imageOnShield === "lion")) {
         return alert("It's Lannister!");
     } else return alert("It's Not Lannister!");
 }
