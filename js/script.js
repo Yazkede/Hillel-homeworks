@@ -31,7 +31,7 @@ function words(d) {
         d >= 32 && d <= 34 ||
         d >= 42 && d <= 44) {
         return d + " товара";
-    } else if (d == 0 ||
+    } else if (d === 0 ||
         d >= 5 && d <= 20 ||
         d >= 25 && d <= 30 ||
         d >= 35 && d <= 40 ||
