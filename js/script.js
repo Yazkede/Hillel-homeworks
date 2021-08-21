@@ -1,38 +1,35 @@
-//Задача. Дан массив ['a', 'b', 'c']. Добавьте ему в конец элементы 1, 2, 3.
-var arr = ['a', 'b', 'c'];
-arr.push(1, 2, 3);
-console.log(arr);
+const obj = {
+    prop: '42',
+    prop2: [8, 9, 10, {
+        beautifulPropertyName: 88,
+        'property with spaces': {
+            a: {
+                b: '',
+                c: {
+                    someProperty: [{
+                        'prop name': 'I am a smart programmer',
+                    }],
+                },
+            },
+        },
+    }],
+    prop3: function () {
+        return {
+            baz: 'Hello',
+            bar: {
+                anotherBeautifulProp: [8, {
+                    target: 'It was simple!',
+                }],
+            },
+        };
+    }
+};
 
+// Используя операторы . и [] получить значение свойств 'target' и 'prop name' 
+// у объекта записанного в переменную 'obj'.
+// Вывести результат в консоль:
+// console.log(obj ваш поезд здесь); // I am a smart programmer
+// console.log(obj ваш поезд здесь); // It was simple!
 
-//Задача. Дан массив [1, 2, 3]. Сделайте из него массив [3, 2, 1].
-var arr = [1, 2, 3];
-console.log(arr.reverse());
-
-
-//Задача. Дан массив [1, 2, 3]. Добавьте ему в начало элементы 4, 5, 6.
-var arr = [1, 2, 3];
-arr.unshift(4, 5, 6);
-console.log(arr);
-
-
-//Задача. Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3].
-var arr = [1, 2, 3, 4, 5];
-var newArr = arr.slice(0, 3);
-console.log(newArr);
-
-
-//Задача. Дан массив ['js', 'css', 'jq']. Выведите на экран первый элемент.
-var arr = ['js', 'css', 'jq'];
-document.write(arr[0]);
-
-
-//Задача. Напишите функцию, которая возвращает объект, составленный из значений вложенных массивов. Первое значение - ключ, второе - зачение.
-// * Ожидаемый результат: [['a', 1], ['b', 2]] => { a: 1, b: 2 }
-
-var fromPairs = (array) => {
-    const obj = Object.fromEntries(array);
-    return obj;
-}
-const data = [['a', 1], ['b', 2]];
-console.log(fromPairs(data));
-
+console.log(obj.prop2[3]['property with spaces'].a.c.someProperty[0]['prop name']);
+console.log(obj.prop3().bar.anotherBeautifulProp[1].target);
